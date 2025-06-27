@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sports Zone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #2c3e50;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 25px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    nav h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Banner Image */
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      color: #2980b9;
+    }
+
+    .section p, .section ul {
+      line-height: 1.6;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-form label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .contact-form input, .contact-form textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #1a252f;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>Sports Zone</h1>
+    <ul>
+      <li><a href="#cricket">Cricket</a></li>
+      <li><a href="#football">Football</a></li>
+      <li><a href="#basketball">Basketball</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Banner Image -->
+  <div class="banner">
+   <img src="https://maroc-diplomatique.net/wp-content/uploads/2021/01/sport-1-e1610710779441.jpg" alt="Sports Banner">
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+
+  !-- About Us -->
+    <div class="section" id="about">
+      <h2>🙋 About Us</h2>
+      <p>Welcome to Sports Arena – your ultimate destination for real-time updates, news, and features on Cricket, Football, and Basketball. We’re passionate sports fans bringing you scores, stories, and insights that matter.</p>
+      <img scr="https://th.bing.com/th/id/OIP.EGhXvkus9yVY9x3ojfYnFwHaEK?rs=1&pid=ImgDetMain&cb=idpwebpc2"alt="sports banner">
+    </div>
+
+    <div class="section" id="cricket">
+      <h2>🏏 Cricket</h2>
+      <p>India clinched a thrilling T20 win against Pakistan. Kohli starred with a 78*, and Bumrah sealed the match with a tight final over.</p>
+    </div>
+
+    <div class="section" id="football">
+      <h2>⚽ Football</h2>
+      <p>Argentina wins the international friendly with Messi scoring the winning goal in the 85th minute.</p>
+    </div>
+
+    <div class="section" id="basketball">
+      <h2>🏀 Basketball</h2>
+      <p>Warriors defeated the Lakers 110-99 with Curry dropping 6 three-pointers and 34 points overall.</p>
+    </div>
+
+    <div class="section" id="news">
+      <h2>📰 Latest Sports News</h2>
+      <ul>
+        <li>FIFA reveals 2026 World Cup venues</li>
+        <li>New rules announced for IPL 2026 season</li>
+        <li>NBA draft set for July 10</li>
+      </ul>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="section" id="contact">
+      <h2>📬 Contact Us</h2>
+      <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Sports Zone | Built for sports fans around the world.
+  </footer>
+
+</body>
+</html>
